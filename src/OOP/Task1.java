@@ -21,6 +21,12 @@ public class Task1 {
         Fish fish = new Fish();
         duck.fly();
         fish.fly();
+        VeterinaryClinic clinic = new VeterinaryClinic();
+        clinic.addPatient(cat).addPatient(dog).addPatient(duck);
+        //System.out.println(clinic.getPatients());
+        System.out.println(clinic.getGoable());
+
+
         /*
         Хочу во-первых сказать большое спасибо за качественную подачу материала
         после вас хоть в чем-то разобрался.Проьлем у меня не возникло , так как я пересмотрел семинар

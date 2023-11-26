@@ -12,6 +12,11 @@ public class Fish extends Animal{
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public void fly() {
         System.out.println("impossible");
     }

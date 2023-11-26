@@ -2,7 +2,7 @@ package OOP;
 
 import java.time.LocalDate;
 
-public class Dog extends Animal{
+public class Dog extends Animal implements Goable{
     public Dog() {
         super();
     }
@@ -12,7 +12,17 @@ public class Dog extends Animal{
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public void fly() {
         System.out.println("do not make it up");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("Dog run");
     }
 }
