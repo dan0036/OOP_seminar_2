@@ -2,7 +2,8 @@ package OOP;
 
 import java.time.LocalDate;
 
-public class Fish extends Animal{
+public class Fish extends Animal implements Swimmable{
+    Double swimSpeed;
     public Fish() {
         super();
     }
@@ -17,13 +18,12 @@ public class Fish extends Animal{
     }
 
     @Override
-    public void fly() {
-        System.out.println("impossible");
+    public void swim() {
+        System.out.println("Fish swims");
     }
 
     @Override
-    public void toGo() {
-        System.out.println("no than to walk");
+    public Double getSwimSpeed() {
+        return swimSpeed;
     }
-
 }

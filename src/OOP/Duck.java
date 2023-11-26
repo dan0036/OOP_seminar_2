@@ -2,7 +2,9 @@ package OOP;
 
 import java.time.LocalDate;
 
-public class Duck extends Animal {
+public class Duck extends Animal implements Flyable, Swimmable{
+    Double flySpeed;
+    Double swimSpeed;
     public Duck() {
         super();
     }
@@ -14,5 +16,25 @@ public class Duck extends Animal {
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Duck flies");
+    }
+
+    @Override
+    public Double getFlySpeed() {
+        return flySpeed;
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("Duck swims");
+    }
+
+    @Override
+    public Double getSwimSpeed() {
+        return swimSpeed;
     }
 }

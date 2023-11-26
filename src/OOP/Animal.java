@@ -1,7 +1,7 @@
 package OOP;
 
 import java.time.LocalDate;
-
+import java.util.ArrayList;
 
 
 public abstract class Animal {
@@ -49,15 +49,6 @@ public abstract class Animal {
         eat();
         play();
         sleep();
-    }
-    public void toGo(){
-        System.out.println(getClass().getSimpleName() + " go very well");
-    }
-    public  void fly(){
-        System.out.println(getClass().getSimpleName() + " fly");
-    }
-    public void swim(){
-        System.out.println(getClass().getSimpleName() + " can swim");
     }
 
     @Override

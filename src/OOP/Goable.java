@@ -1,9 +1,6 @@
 package OOP;
 
-public interface Goable {
-    public static final String type = "Goable";
+interface Goable {
     void run();
-     default double getRunSpeed(){
-         return 5.5;
-     }
+    Double getRunSpeed();
 }

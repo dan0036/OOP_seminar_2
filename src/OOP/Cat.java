@@ -1,8 +1,15 @@
 package OOP;
 
 import java.time.LocalDate;
+import java.util.AbstractList;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Cat extends Animal implements Speakble,Goable{
+public class Cat extends Animal implements Goable, Flyable{
+
+    Double kickHard;
+    Double runSpeed;
+
     public Cat() {
         super();
     }
@@ -17,24 +24,22 @@ public class Cat extends Animal implements Speakble,Goable{
     }
 
     @Override
-    public void swim() {
-        System.out.println("afraid water");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("can not swim");
-    }
-
-    @Override
-    public void speak() {
-        System.out.println("meow");
-    }
-
-    @Override
     public void run() {
         System.out.println("Cat run");
     }
 
+    @Override
+    public Double getRunSpeed() {
+        return runSpeed;
+    }
 
+    @Override
+    public void fly() {
+        System.out.println("Even cats fly, but not for long.");
+    }
+
+    @Override
+    public Double getFlySpeed() {
+        return kickHard/2;
+    }
 }

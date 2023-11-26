@@ -7,6 +7,12 @@ public class Dog extends Animal implements Goable{
         super();
     }
 
+    Double runSpeed;
+
+    public void setRunSpeed(Double runSpeed) {
+        this.runSpeed = runSpeed;
+    }
+
     public Dog(String name, Illness illness, String ownername, LocalDate birthday) {
         super(name, illness, ownername, birthday);
     }
@@ -16,13 +22,15 @@ public class Dog extends Animal implements Goable{
         return name;
     }
 
-    @Override
-    public void fly() {
-        System.out.println("do not make it up");
-    }
 
     @Override
     public void run() {
-        System.out.println("Dog run");
+        System.out.println("Dog runs");
+    }
+
+    @Override
+    public Double getRunSpeed() {
+        return runSpeed;
     }
 }
+
